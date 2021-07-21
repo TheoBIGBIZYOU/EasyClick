@@ -1,0 +1,159 @@
+<?xml version="1.0" ?>
+<template xmlns="http://schemas.sulu.io/template/template"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+
+    <key>plat-indiv</key>
+
+    <view>pages/plat-indiv</view>
+    <controller>Sulu\Bundle\WebsiteBundle\Controller\DefaultController::indexAction</controller>
+    <cacheLifetime>604800</cacheLifetime>
+
+    <meta>
+        <title lang="fr">plat-indiv</title>
+    </meta>
+
+    <properties>
+        <property name="title" type="text_line" mandatory="true">
+            <meta>
+                <title lang="fr">Titre</title>
+            </meta>
+            <params>
+                <param name="headline" value="true"/>
+            </params>
+
+            <tag name="sulu.rlp.part"/>
+        </property>
+
+        <property name="url" type="resource_locator" mandatory="true">
+            <meta>
+                <title lang="fr">URL</title>
+            </meta>
+
+            <tag name="sulu.rlp"/>
+        </property>
+        <property name="NomPlat" type="text_line">
+            <meta>
+                <title lang="fr">Nom du plat</title>
+            </meta>
+        </property>
+
+        <property name="imagePlat" type="media_selection">
+            <meta>
+                <title>Image du plat</title>
+            </meta>
+            <params>
+                <param name="types" value="image,video"/>
+            </params>
+        </property>
+        <property name="list" type="select">
+            <meta>
+                <title lang="fr">Piquant</title>
+            </meta>
+
+            <params>
+                <param name="default_values" type="collection">
+                    <param name="paspiquant"/>
+                    <param name="1piquant"/>
+                    <param name="2piquant"/>
+                    <param name="3piquant"/>
+                    <param name="4piquant"/>
+                </param>
+
+                <param name="values" type="collection">
+                    <param name="paspiquant">
+                        <meta>
+                            <title lang="fr">Pas piquant</title>
+                        </meta>
+                    </param>
+                    <param name="1piquant">
+                        <meta>
+                            <title lang="fr">Niveau 1</title>
+                        </meta>
+                    </param>
+                    <param name="2piquant">
+                        <meta>
+                            <title lang="fr">Niveau 2</title>
+                        </meta>
+                    </param>
+                    <param name="3piquant">
+                        <meta>
+                            <title lang="fr">Niveau 3</title>
+                        </meta>
+                    </param>
+                    <param name="4piquant">
+                        <meta>
+                            <title lang="fr">Niveau 4</title>
+                        </meta>
+                    </param>
+                </param>
+            </params>
+        </property>
+        <property name="description" type="text_area">
+            <meta>
+                <title lang="fr">Description</title>
+            </meta>
+        </property>
+        <property name="number" type="number">
+            <meta>
+                <title lang="fr">Prix</title>
+            </meta>
+        </property>
+        <block name="listIngredients" default-type="listIngredients" minOccurs="0">
+            <meta>
+                <title>Ingrédients</title>
+            </meta>
+            <types>
+                <type name="listIngredients">
+                    <meta>
+                        <title>Ingrédients</title>
+                    </meta>
+                    <properties>
+                        <property name="imageIngredient" type="media_selection">
+                            <meta>
+                                <title>Image de l'ingrédient</title>
+                            </meta>
+                            <params>
+                                <param name="types" value="image,video"/>
+                            </params>
+                        </property>
+                        <property name="NomIngredient" type="text_line">
+                            <meta>
+                                <title lang="fr">Nom de l'ingrédient</title>
+                            </meta>
+                        </property>
+                    </properties>
+                </type>
+            </types>
+        </block>
+        <property name="details" type="text_editor">
+            <meta>
+                <title lang="fr">Plus de détails</title>
+            </meta>
+        </property>
+        <property name="category" type="single_category_selection">
+            <meta>
+                <title lang="fr">Catégorie du plat</title>
+            </meta>
+        </property>
+        <property name="pages" type="smart_content">
+            <meta>
+                <title lang="en">Smart Content</title>
+            </meta>
+
+            <params>
+                <param name="provider" value="pages"/>
+                <param name="max_per_page" value="4"/>
+                <param name="page_parameter" value="p"/>
+
+                <param name="properties" type="collection">
+                    <param name="NomPlat" value="NomPlat"/>
+                    <param name="imagePlat" value="imagePlat"/>
+                    <param name="prix" value="prix"/>
+                    <param name="category" value="category">
+                    </param>
+                </param>
+            </params>
+        </property>
+    </properties>
+</template>

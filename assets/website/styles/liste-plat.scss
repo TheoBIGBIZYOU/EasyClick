@@ -1,0 +1,78 @@
+div.liste-plat-container{
+  margin: 5% 0;
+  div.liste-plat-menu{
+    width: 90%;
+    margin: 0 auto 5%;
+    p{
+      text-align: center;
+      cursor: pointer;
+      width: 13%;
+      display: inline-block;
+      font-family: 'Raleway';
+    }
+    p.active{
+      text-align: center;
+      margin-bottom: 0;
+      cursor: pointer;
+      width: 13%;
+      display: inline-block;
+      font-family: 'Raleway';
+      font-weight: bold;
+      padding-bottom: 2%;
+      border-bottom: 1px solid black;
+    }
+    hr{
+      margin-top: 0;
+    }
+  }
+  div.liste-plat-main{
+    div.liste-plat-indiv{
+      display: none;
+    }
+    a{
+      color: black;
+      div.liste-plat-indiv.active{
+        display: block;
+        box-shadow: 0px 0px 25px 7px #DBDBDB;
+        background-color: white;
+        width: 15%;
+        display: inline-block;
+        padding: 0 0 2%;
+        margin: 0 4%;
+        img{
+          width: 100%;
+        }
+        div.description{
+          width: 80%;
+          margin: 0 auto;
+          h2{
+            font-family: 'Raleway';
+            font-weight: bold;
+            font-size: 14px;
+          }
+          p{
+            text-align: right;
+            margin: 0;
+            font-size: 15px;
+          }
+          p.verre{
+            font-size: 11px;
+          }
+        }
+        div.ajoutPanier{
+          margin-bottom: -20%;
+          p{
+            cursor: pointer;
+            margin: 0 auto;
+            width: 11%;
+            padding: 6%;
+            border-radius: 20px;
+            background-color: black;
+            text-align: center;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

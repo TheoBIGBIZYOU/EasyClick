@@ -1,0 +1,131 @@
+div.header-container{
+  background-color: #F6F6F6;
+  div.top-header{
+    padding-bottom: 2%;
+    width: 90%;
+    margin: 0 auto;
+    div.top-header-image{
+      margin-right: 7%;
+      margin-top: 2%;
+      vertical-align: middle;
+      display: inline-block;
+      width: 25%;
+      img{
+        width: 100%;
+      }
+    }
+    div.top-header-search{
+      text-align: center;
+      margin-top: 2%;
+      vertical-align: middle;
+      display: inline-block;
+      width: 30%;
+      margin: 0 auto;
+      input[type=text]{
+        width: 65%;
+        border: 1px solid #959595;
+        border-radius: 10px 0 0 10px;
+        padding: 3% 5%;
+        vertical-align: middle;
+        margin-top: 0;
+      }
+      input::placeholder{
+        color: #959595;
+      }
+      input[type=submit]{
+        margin-top: 0;
+        vertical-align: middle;
+        background-image: url("/assets/website/img/search.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid #959595;
+        border-radius: 0 10px 10px 0;
+        padding: 3% 5%;
+        margin-left: -3%;
+      }
+    }
+    div.top-header-commande{
+      vertical-align: top;
+      display: inline-block;
+      width: 30%;
+      float: right;
+      div.top-header-commande-top{
+        background-color: #545252;
+        div.top-header-commande-top-container{
+          width: 90%;
+          margin: 0 auto;
+          div.product{
+            display: inline-block;
+            p{
+              color: #FFFFFF;
+              display: inline-block;
+            }
+          }
+          div.total{
+            float: right;
+            display: inline-block;
+            color: #FFFFFF;
+            p{
+              display: inline-block;
+            }
+          }
+        }
+      }
+      div.top-header-commande-bottom{
+        border-radius: 0 0 25px 25px;
+        padding: 5% 5%;
+        background-color: #ffffff;
+        div.top-header-commande-bottom-boutton{
+          background-color: #F6F6F6;
+          border-radius: 25px 25px 25px 25px;
+          text-align: center;
+          padding: 3% 0;
+          a{
+            text-decoration: none;
+            font-family: 'Roboto';
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  div.bottom-header{
+    padding-top: 2%;
+    text-align: center;
+    background-color: white;
+    div.bottom-header-image{
+      svg{
+        margin-left: 5%;
+      }
+    }
+  }
+}
+div.footer_container{
+  background-color: #545252;
+  div.footer_top{
+    padding: 3% 0;
+    color: white;
+    list-style-type: none;
+    width: 70%;
+    margin: 0 auto;
+    ul{
+      li{
+        font-family: 'Roboto', sans-serif;
+        margin: 0 5%;
+        display: inline-block;
+      }
+    }
+  }
+  div.footer_bottom{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    hr{
+      width: 40%;
+      margin: 0 auto;
+    }
+    svg{
+      margin: 3% 2%;
+    }
+  }
+}

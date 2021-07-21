@@ -1,0 +1,34 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <div class="liste-plat-container" data-controller="listePlat">
+        <div class="liste-plat-menu">
+            {% for items in content.listMenu %}
+                <p class="liste-menu-indiv">{{ items.title }}</p>
+            {% endfor %}
+            <hr>
+        </div>
+        <div class="liste-plat-main">
+            {% for itemsMenu in content.listMenu %}
+                {% for item in content.pages %}
+                    {% if item.category.name == itemsMenu.title %}
+                        {{ dump(item.category.name) }}
+                        {{ dump(itemsMenu.title) }}
+                        {{ dump(item) }}
+                        <a href="{{ item.url }}">
+                            <div class="liste-plat-indiv">
+                                {% for image in item.imagePlat %}
+                                    <img src="{{ image.url }}" alt="">
+                                {% endfor %}
+                                <div class="description">
+                                    <h2>{{ item.title }}</h2>
+                                    <p>{{ item.prix }} €</p>
+                                </div>
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

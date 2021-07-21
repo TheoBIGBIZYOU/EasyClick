@@ -1,0 +1,115 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <div class="plat-indiv-container">
+        <div class="plat-indiv-menu">
+
+        </div>
+        <div class="plat-indiv-plat">
+            <div class="plat-indiv-plat-container">
+                <div class="plat-indiv-left">
+                    {% for items in content.imagePlat %}
+                        <img src="{{ items.url }}" alt="">
+                    {% endfor %}
+                </div>
+                <div class="plat-indiv-right">
+                    <h2>{{ content.NomPlat }}</h2>
+                    <div class="piquant">
+                        {% if content.list[0] == "1piquant" %}
+                            <img src="{{ asset('build/website/images/1piquant.png') }}" alt="">
+                        {% endif %}
+                        {% if content.list[0] == "2piquant" %}
+                            <img src="{{ asset('build/website/images/2piquant.png') }}" alt="">
+                        {% endif %}
+                        {% if content.list[0] == "3piquant" %}
+                            <img src="{{ asset('build/website/images/3piquant.png') }}" alt="">
+                        {% endif %}
+                        {% if content.list[0] == "4piquant" %}
+                            <img src="{{ asset('build/website/images/4piquant.png') }}" alt="">
+                        {% endif %}
+                    </div>
+                    <p>{{ content.description }}</p>
+                    <div class="prix" data-controller="prix">
+                        <div class="quantite">
+                            <a class="moins">-</a>
+                            <p class="quantitePlat">1</p>
+                            <a class="plus">+</a>
+                        </div>
+                        <p class="prixAvecQuantite">{{ content.number }}</p>
+                    </div>
+                    <div class="ajouter">
+                        <a href="">AJOUTER AU PANIER</a>
+                    </div>
+                    <div class="plat-indiv-right-ingredients">
+                        {% for ing in content.listIngredients %}
+                            <div class="ingredient">
+                                {% for image in  ing.imageIngredient %}
+                                    <img src="{{ image.url }}" alt="">
+                                {% endfor %}
+                                <p>{{ ing.NomIngredient }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accompagnement">
+            <div class="menu">
+                <p class="active">BOISSON EN ACCOMPAGNEMENT</p>
+                <p>SUPPLEMENT</p>
+                <p>PLUS DE DETAILS</p>
+                <hr>
+            </div>
+            <div class="accompagnement_main">
+                <div class="accompagnement_indiv boisson active">
+                    <div class="gris"></div>
+                    {% for item in content.pages %}
+                        {% if item.category.name == "VINO" %}
+                            <div class="boisson_indiv">
+                                {% for image in item.imagePlat %}
+                                    <img src="{{ image.url }}" alt="">
+                                {% endfor %}
+                                <div class="description">
+                                    <h2>{{ item.title }}</h2>
+                                    <p>{{ item.prix }} €</p>
+                                    <p class="verre">Le verre</p>
+                                </div>
+                                <div class="ajoutPanier">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="accompagnement_indiv dessert">
+                    <div class="gris"></div>
+                    {% for item in content.pages %}
+                        {% if item.category.name == "DOLCI" %}
+                            <div class="boisson_indiv">
+                                {% for image in item.imagePlat %}
+                                    <img src="{{ image.url }}" alt="">
+                                {% endfor %}
+                                <div class="description">
+                                    <h2>{{ item.title }}</h2>
+                                    <p>{{ item.prix }} €</p>
+                                </div>
+                                <div class="ajoutPanier">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="accompagnement_indiv info">
+                    {% for item in content.pages %}
+                        <div class="info_indiv">
+                            <div class="details">
+                                {{ content.details|raw }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

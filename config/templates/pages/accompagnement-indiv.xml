@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<template xmlns="http://schemas.sulu.io/template/template"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+
+    <key>accompagnement-indiv</key>
+
+    <view>pages/accompagnement-indiv</view>
+    <controller>Sulu\Bundle\WebsiteBundle\Controller\DefaultController::indexAction</controller>
+    <cacheLifetime>604800</cacheLifetime>
+
+    <meta>
+        <title lang="fr">accompagnement-indiv</title>
+    </meta>
+
+    <properties>
+        <property name="title" type="text_line" mandatory="true">
+            <meta>
+                <title lang="fr">Titre</title>
+            </meta>
+            <params>
+                <param name="headline" value="true"/>
+            </params>
+
+            <tag name="sulu.rlp.part"/>
+        </property>
+
+        <property name="url" type="resource_locator" mandatory="true">
+            <meta>
+                <title lang="fr">URL</title>
+            </meta>
+
+            <tag name="sulu.rlp"/>
+        </property>
+        <property name="NomPlat" type="text_line">
+            <meta>
+                <title lang="fr">Nom du plat</title>
+            </meta>
+        </property>
+
+        <property name="imagePlat" type="media_selection">
+            <meta>
+                <title>Image du plat</title>
+            </meta>
+            <params>
+                <param name="types" value="image,video"/>
+            </params>
+        </property>
+        <property name="prix" type="number">
+            <meta>
+                <title lang="fr">Prix</title>
+            </meta>
+        </property>
+        <property name="category" type="single_category_selection">
+            <meta>
+                <title lang="fr">Catégorie du plat</title>
+            </meta>
+        </property>
+    </properties>
+</template>
