@@ -1,7 +1,180 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
-    <h1>{{ content.title }}</h1>
+    <div class="EasyClick_body" data-controller="header-disable">
 
-    {{ content.article|raw }}
+        <div class="EasyClick_header">
+            <div class="EasyClick_header_menu">
+                <img src="{{ asset('build/website/images/EC-Restauration-FONDNOIR.png')}}" alt="">
+                <ul>
+                    <li id="premier"> Nos Services</li>
+                    <li id="second" ><a href="/comment-ca-marche">Comment ça marche</a> </li>
+                    <hr>
+                </ul>
+
+            </div>
+
+
+            <div class="EasyClick_header_main">
+
+                <h2> Essayer le Click and Collect pour votre établissement</h2>
+
+                <ul>
+                    <li>Lancer votre propre solution de commande en ligne et <span>augmenter vos ventes </span></li>
+                    <li>Ajouter la commande en ligne <span>sur votre site</span> et <span>vos réseaux sociaux</span></li>
+                    <li>Acceptez tous <span>les moyens de paiement</span> (CB et titre restaurants)</li>
+                </ul>
+
+                <button> Créer mon Click and Collect </button>
+
+                <div class="EasyClick_header_main_img">
+                    <img src="{{ asset('build/website/images/down.png')}}">
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="EasyClick_main">
+            <h2> Générer plus de chiffre d'affaire grâce au Click and Collect</h2>
+
+            <div class="EasyClick_main_pourcentage">
+                <div class="EasyClick_main_pourcentage60">
+
+                    <h1> 60 % </h1>
+                    <p>En 2020, plus de 60% des
+                        <br> commandes au restaurant
+                        <br> se font en Click and Collect</p>
+
+                </div>
+
+                <div class="EasyClick_main_pourcentage90">
+
+                    <h1> 90 % </h1>
+                    <p> 90% des utilisateurs
+                        <br> vous recherchent sur internet,
+                        <br> soyez présent !</p>
+
+                </div>
+
+                <div class="EasyClick_main_pourcentage20">
+
+                    <h1> 20 % </h1>
+                    <p>La commande en ligne
+                        <br>augmente
+                        le panier moyen de 20%</p>
+
+                </div>
+
+            </div>
+
+            <div class="EasyClick_main_explication">
+
+                <div class="EasyClick_main_explication_gauche">
+
+                    <img src="{{ asset('build/website/images/macbook.jpg')}}" alt="">
+
+                </div>
+
+                <div class="EasyClick_main_explication_droite">
+
+                    <h3>Le click and Collect : Un Indispensable pour 2021</h3>
+
+                    <div class="EasyClick_main_explication_droite_carre_haut">
+                        <br>
+                        <img src="{{ asset('build/website/images/tap.svg')}}">
+
+                        <p id="titre">Modifier votre Click and
+                            Collect en 1 click</p>
+
+                        <p>Créez votre menu en 1 clic
+                            <br>depuis votre espace client.
+                            <br>Ajoutez ou supprimez des plats
+                            <br>à tout moment depuis un
+                            <br>ordinateur ou smartphone.</p>
+                    </div>
+
+                    <div class="EasyClick_main_explication_droite_carre_haut_droite">
+                        <br>
+                        <img src="{{ asset('build/website/images/shopping.svg')}}">
+
+                        <p id="titre2">Organisez vos commandes</p>
+
+                        <p>Définissez vos stocks de
+                            <br>produits disponibles
+                            <br>à la vente. Permettez à
+                            <br>vos clients de précommander
+                            <br>plusieurs jours à l’avance
+                            <br>et recevez directement
+                            <br>vos commandes sur votre logiciel
+                            <br>de caisse pour
+                            <br>une meilleure organisation</p>
+
+                    </div>
+
+                    <br>
+
+                    <div class="EasyClick_main_explication_droite_carre_bas">
+                        <br>
+                        <img src="{{ asset('build/website/images/bars.svg')}}">
+
+                        <p id="titre3">Augmentez votre
+                            rentabilité</p>
+
+                        <p>Profitez d’un Click & Collect
+                            <br>sans aucune commission
+                            <br>sur les ventes.
+                            <br>Proposez des recommandations
+                            <br>intelligentes, des formules
+                            <br>et mettez en avant
+                            <br>vos meilleures ventes !</p>
+
+                    </div>
+
+                    <div class="EasyClick_main_explication_droite_carre_bas_droite">
+                        <br>
+                        <img src="{{ asset('build/website/images/analytics.svg')}}">
+
+                        <p id="titre4">Suivre vos statistiques
+                            de ventes</p>
+
+                        <p>Visualisez les performances
+                            <br>de votre Click & Collect
+                            <br>sur un tableau de bord
+                            <br>quotidien. Adaptez votre
+                            <br>offre en ligne en fonction de
+                            <br>vos meilleures ventes !</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="EasyClick_main_button">
+                <button>Demander une démo</button>
+
+            </div>
+
+        </div>
+
+        <div class="EasyClick_footer">
+            <p id="footer1">+1000 restaurants utilisent </p> <p id="footer2">le Click and Collect</p>
+
+            <div class="EasyClick_footer_images">
+
+                <img id="aubureau" src="{{ asset('build/website/images/Au-bureau-Logo-white.png')}}" alt="">
+                <img id="it" src="{{ asset('build/website/images/logo-white.png')}}" alt="">
+                <img id="robin" src="/{{ asset('build/website/images/logo_robin.webp')}}" alt="">
+                <img id="pancook" src="{{ asset('build/website/images/pancook_64810.jpg')}}" alt="">
+                <img id="arc" src="{{ asset('build/website/images/7110359781481cafb7c6fecc7a553a35.png.jpeg')}}" alt="">
+                <img id="zango" src="{{ asset('build/website/images/zango_46984.jpg')}}" alt="">
+
+            </div>
+
+            <br>
+            <br>
+        </div>
+
+    </div>
+
 {% endblock %}
