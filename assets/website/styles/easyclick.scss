@@ -1,0 +1,249 @@
+div.IT-container-header{
+  position: relative;
+}
+div.IT-container{
+  width: 100%;
+}
+div.IT-container-header-logo-home img{
+  width: 100%;
+  position :absolute;
+  z-index: -1;
+  filter: brightness(1);
+}
+div.IT-container-header-logo-black img{
+  width: 8%;
+  margin: 48px 25px 1px;
+}
+
+div.IT-container-header-logo-TroisBarres img{
+  width: 8%;
+  margin: 4px 25px 1px;
+}
+div.IT-container-header-logo-blanc img{
+  width: 25%;
+  display: block;
+  margin: 4%  auto;
+}
+div.IT-container-header-logo-Langue img{
+  float: right;
+  margin: 48px 25px 1px;
+  width: 8%;
+}
+div.IT-container-header-logo-down img{
+  display: block;
+  margin: 21% auto auto ;
+  width: 4%;
+  position: relative;
+}
+div.IT-container-main{
+  margin: 5% auto;
+  width: 80%;
+  text-align: center;
+}
+div.IT-container-main-LaCarte-texte{
+  width: 36%;
+  margin: 0 auto;
+  text-align: left;
+}
+div.IT-container-main-LaCarte-carre p {
+  background-color: black;
+  padding: 2.5%;
+  width: 10%;
+  display:inline-block;
+  color: white;
+  margin-top: -9%;
+}
+div.IT-container-main-LaCarte-image img{
+  width: 100%;
+  margin-top: 8%;
+}
+div.IT-container-main-LaCarte-Pasta p {
+  display:inline-block;
+  color: black;
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+div.IT-container-main-LaCarte-Pasta-bottom-left{
+  width: 41%;
+  display: inline-block;
+  text-align:left ;
+;
+}
+div.IT-container-main-LaCarte-Pasta-bottom-right{
+  width: 41%;
+  display: inline-block;
+  text-align: left;
+}
+
+div.IT-container-main-LaCarte-Pasta-individuel H4{
+  margin-bottom: 0%;
+  font-weight: bold;
+
+}
+div.IT-container-main-ClickandCollect{
+  position: relative;
+  display: block;
+}
+div.IT-container-main-ClickandCollect-photo img{
+  width: 100%;
+  position :absolute;
+  z-index: -1;
+  filter: brightness(1);
+  text-align: center;
+
+}
+
+div.IT-container-main-ClickandCollect-photo1 img{
+  width: 60%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+
+div.IT-container-main-ClickandCollect-texte p {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  margin: auto;
+  font-size: 25px;
+  margin-top: 2%;
+  filter: drop-shadow(2px 4px 6px black);
+}
+div.IT-container-main-ClickandCollect-texte2 p {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  width: 50%;
+  margin: auto;
+  font-size: 25px;
+  margin-top:3%;
+  filter: drop-shadow(2px 4px 6px black);
+}
+div.IT-container-main-ClickandCollect-button{
+  text-align: center;
+  margin: 4.5% auto ;
+}
+div.IT-container-main-ClickandCollect-button button{
+  border-radius: 15%;
+  width: 20%;
+  border: white;
+  padding:2%;
+  font-size: x-large;
+  filter: drop-shadow(2px 4px 6px black);
+  font-weight: bold;
+}
+div.IT-container-main-ClickandCollect-button p{
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  margin-top: 2%;
+  filter: drop-shadow(2px 4px 6px black);
+}
+div.IT-container-main-block-images{
+  display: content;
+  text-align: center;
+  margin: 10% auto;
+}
+div.IT-container-main-block-images-haut-left {
+  display: inline-block;
+  width: 39%;
+  margin-top: 5%;
+}
+div.IT-container-main-block-images-haut-left img {
+  width: 90%;
+}
+div.IT-container-main-block-images-haut-right{
+  display: inline-block;
+  width: 40%;
+  margin-top: 20px;
+}
+div.IT-Footer-logo{
+  text-align: center;
+}
+div.IT-Footer-logo-RS{
+  text-align: center;
+}
+div.IT-container-main-block-images-haut-right-commentaire{
+  background-color:black;
+  color: white;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  body{
+    width: 100%;
+  }
+  div.IT-container-main{
+    width: 90%;
+  }
+  div.IT-container-header-logo-black img{
+    width: 12%;
+    margin-top: 12px;
+  }
+  div.IT-container-header-logo-TroisBarres img{
+    width: 12%;
+    margin-top: 0;
+  }
+  div.IT-container-header-logo-Langue img{
+    width: 12%;
+    margin-top: 55px;
+  }
+  div.IT-container-main-LaCarte-texte{
+    width: 100%;
+  }
+  div.IT-container-main-LaCarte-Pasta-bottom-left{
+    width: 100%;
+  }
+  div.IT-container-main-LaCarte-carre{
+    width: 100%;
+  }
+  div.IT-container-main-LaCarte-carre p{
+    width: fit-content;
+  }
+  div.IT-container-main-LaCarte-Pasta-bottom-right{
+    width: 100%;
+  }
+  div.IT-container-main-ClickandCollect-texte p{
+    width: 100%;
+    font-size: 14px;
+  }
+  div.IT-container-main-ClickandCollect-texte2 p{
+    width: 100%;
+    font-size: 14px;
+  }
+  div.IT-container-main-ClickandCollect-button button{
+    width: 50%;
+  }
+  div.IT-container-main-ClickandCollect-photo1 img{
+    width: 50%;
+  }
+  div.IT-container-main-ClickandCollect-photo1 img{
+    width: 50%;
+  }
+  div.IT-container-main-block-images-haut-left {
+    width: 90%;
+  }
+  div.IT-container-main-block-images-haut-right {
+    width: 90%;
+    margin-top: 0%;
+  }
+  div.IT-container-main-block-images-haut-right img{
+    width: 90%;
+  }
+  div.IT-container-main-block-images-haut-right p{
+    width: 90%;
+  }
+  div.IT-container-main-block-images-bas img{
+    width: 100%;
+  }
+  div.IT-Footer-logo img{
+    width: 60%;
+  }
+  div.IT-Footer-logo-RS img{
+    width: 50%;
+  }
+
+}

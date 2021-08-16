@@ -34,7 +34,7 @@
         </property>
         <property name="NomPlat" type="text_line">
             <meta>
-                <title lang="fr">Nom du plat</title>
+                <title lang="fr">Nom du dedeplat</title>
             </meta>
         </property>
 
