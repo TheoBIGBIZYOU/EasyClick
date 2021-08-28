@@ -1,6 +1,30 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
-    <h1>{{ content.title }}</h1>
-    <p>dzodlkzddjlk</p>
+    <div class="plat-indiv-container">
+        <div class="plat-indiv-plat">
+            <div class="plat-indiv-plat-container">
+                <div class="plat-indiv-left">
+                    {% for items in content.imagePlat %}
+                        <img src="{{ items.url }}" alt="">
+                    {% endfor %}
+                </div>
+                <div class="plat-indiv-right">
+                    <h2>{{ content.NomPlat }}</h2>
+                    <p>{{ content.description }}</p>
+                    <div class="prix" data-controller="prix">
+                        <div class="quantite">
+                            <a class="moins">-</a>
+                            <p class="quantitePlat">1</p>
+                            <a class="plus">+</a>
+                        </div>
+                        <p class="prixAvecQuantite">{{ content.prix }}</p>
+                    </div>
+                    <div class="ajouter">
+                        <a href="/it-food/panier">AJOUTER AU PANIER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

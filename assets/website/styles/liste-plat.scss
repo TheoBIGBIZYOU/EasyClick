@@ -76,3 +76,33 @@ div.liste-plat-container{
     }
   }
 }
+@media screen and (max-width: 768px){
+  div.liste-plat-container{
+    div.liste-plat-menu{
+      width: 100%;
+      margin: unset;
+      p{
+        width: 100%;
+        display: block;
+      }
+      p.active{
+        width: 100%;
+        display: block;
+      }
+    }
+    div.liste-plat-main{
+      text-align: center;
+      a{
+        div.liste-plat-indiv{
+          width: 85% !important;
+          margin: 5% 0 !important;
+          div.description{
+            p{
+              text-align: center !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

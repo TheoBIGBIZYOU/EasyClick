@@ -113,6 +113,10 @@ div.footer_container{
         font-family: 'Roboto', sans-serif;
         margin: 0 5%;
         display: inline-block;
+        a{
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }
@@ -126,6 +130,40 @@ div.footer_container{
     }
     svg{
       margin: 3% 2%;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+
+  div.header-container{
+    div.top-header{
+      div.top-header-image{
+        display: block !important;
+        width: 100% !important;
+      }
+      div.top-header-search{
+        display: block !important;
+        width: 100% !important;
+        margin: 5% 0 !important;
+      }
+      div.top-header-commande{
+        display: block !important;
+        float: unset !important;
+        width: 85% !important;
+        margin: 0 auto !important;
+      }
+    }
+  }
+  div.footer_container{
+    div.footer_top{
+      ul{
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        li{
+          display: block;
+        }
+      }
     }
   }
 }

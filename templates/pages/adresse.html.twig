@@ -1,0 +1,48 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <div class="adresse-container">
+        <div class="formulaire">
+            <div class="formulaire-indiv">
+                <label for="">Prénom <span>*</span></label>
+                <input type="text">
+            </div>
+            <div class="formulaire-indiv">
+                <label for="">Nom <span>*</span></label>
+                <input type="text">
+            </div>
+            <div class="formulaire-indiv">
+                <label for="">Voie <span>*</span></label>
+                <input type="text">
+            </div>
+            <div class="formulaire-indiv">
+                <label for="">Ville <span>*</span></label>
+                <input type="text">
+            </div>
+            <div class="formulaire-indiv">
+                <label for="">Code postal <span>*</span></label>
+                <input type="text">
+            </div>
+            <div class="formulaire-indiv">
+                <label for="">Téléphone</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="next">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>icons/cadenas</title>
+                <g id="icons/cadenas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-5" transform="translate(3.000000, 1.000000)" fill="#5A5851">
+                        <path d="M15.1639344,11.1195555 L15.1639344,18.236522 C15.1639344,19.3246851 14.2580449,20.2099301 13.1445052,20.2099301 L3.85124469,20.2099301 C2.73770492,20.2099301 1.83181542,19.3246851 1.83181542,18.236522 L1.83181542,11.1195555 L15.1639344,11.1195555 Z M15.5124469,9.32889236 L15.4942319,6.83691577 C15.4942319,3.06691119 12.3557984,0 8.49787492,0 C4.63995143,0 1.50151791,3.06691119 1.50151791,6.83691577 C1.50151791,7.33056447 1.91256831,7.73224736 2.4177292,7.73224736 C2.9228901,7.73224736 3.3339405,7.33056447 3.3339405,6.83691577 C3.3339405,4.05420858 5.65027322,1.79006985 8.49787492,1.79006985 C11.3454766,1.79006985 13.6618094,4.05420858 13.6618094,6.83691577 L13.6618094,9.32889236 L1.48755313,9.32889236 C0.667273831,9.32889236 0,9.9815529 0,10.7831387 L0,18.236522 C0,20.3119825 1.72799029,22 3.85124469,22 L13.1487553,22 C15.2726169,22 17,20.3119825 17,18.236522 L17,10.7807654 C16.9951427,9.98036625 16.3278689,9.32889236 15.5124469,9.32889236 L15.5124469,9.32889236 Z" id="Fill-1"></path>
+                        <path d="M6.76962677,16.4997075 C6.76962677,16.0925471 7.0972271,15.7608518 7.4997075,15.7608518 C7.90511291,15.7608518 8.23505324,16.0902071 8.23505324,16.4956125 C8.23505324,16.9027729 7.90511291,17.2344682 7.4997075,17.2344682 C7.0972271,17.2344682 6.76962677,16.9051129 6.76962677,16.4997075 M7.4997075,19 C8.87796888,19 10,17.8779689 10,16.4997075 C10,15.1214461 8.87796888,14 7.4997075,14 C6.12144612,14 5,15.1214461 5,16.4997075 C5,17.8779689 6.12144612,19 7.4997075,19" id="Fill-3"></path>
+                    </g>
+                </g>
+            </svg>
+            <p>La page de paiement sécurisée va s’ouvrir pour valider votre commande.</p>
+        </div>
+        <div class="button">
+            <a href="/it-food/panier/adresse/paiement">SUIVANT</a>
+        </div>
+    </div>
+{% endblock %}

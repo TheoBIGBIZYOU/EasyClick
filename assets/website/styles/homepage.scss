@@ -98,7 +98,10 @@ div.EasyClick_header_main button {
   padding: 1.2%;
   border-style: none;
   box-shadow: 1px 1px 5px 1px grey;
-
+  a{
+    text-decoration: none;
+    color: white;
+  }
 }
 
 div.EasyClick_main_button button {
@@ -112,6 +115,10 @@ div.EasyClick_main_button button {
   margin-top: 10%;
   font-size: 26px;
   line-height: 31px;
+  a{
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .EasyClick_main_pourcentage60 {
@@ -157,7 +164,6 @@ div.EasyClick_main_button button {
   text-align: center;
   display: inline-block;
   width :17%;
-  height: 280px;
   z-index: 1;
   background-color: white;
   margin-left: 35%;
@@ -171,7 +177,6 @@ div.EasyClick_main_button button {
   box-shadow: 1px 1px 5px 1px grey;
   display: inline-block;
   width: 17%;
-  height: 300px;
   margin-left: 5%;
   position: relative;
   top:150px;
@@ -186,7 +191,6 @@ div.EasyClick_main_button button {
   text-align: center;
   display: inline-block;
   width :17%;
-  height: 300px;
   background-color: white;
   margin-left: 35%;
   margin-top:3%;
@@ -201,7 +205,7 @@ div.EasyClick_main_button button {
   text-align:center;
   display: inline-block;
   width: 17%;
-  height: 280px;
+  margin-top: 12%;
   background-color: white;
   margin-left: 5%;
   position: relative;
@@ -260,7 +264,6 @@ div.EasyClick_main_button button {
 
 .EasyClick_footer_images {
   display: inline-block;
-  word-spacing: 50px;
 }
 
 #arc {
@@ -378,7 +381,10 @@ div.EasyClickPage2_main_button button {
   width: 250px;
   height: 75px;
   font-size: 20px;
-
+  a{
+    text-decoration: none;
+    color: white;
+  }
 }
 
 
@@ -399,8 +405,8 @@ div.EasyClickPage2_main_button button {
 }
 
 .EasyClickPage2_header_menu hr {
-  width :15%;
-  margin-left: 42.3%;
+  width :12%;
+  margin-left: 41.5%;
 }
 
 #uno {
@@ -473,14 +479,15 @@ div.EasyClickPage2_pastille {
   height: 300px;
   border-radius: 50%;
   margin-left: 15%;
-  top:-100px;
+  top:200px;
+  position: absolute;
 }
 
 .EasyClickPage2_main p {
   text-align:center;
   font-size: 22px;
   position: relative;
-  top:250px
+  top:230px
 }
 .EasyClickPage2_main span {
   font-weight:bold;
@@ -496,7 +503,7 @@ div.EasyClickPage2_pastille {
   display: inline-block;
   position: relative;
   left: 100px;
-  top:50px;
+  top:90px;
 
 }
 .EasyClickPage2_main_premier_droite h1 {
@@ -520,9 +527,9 @@ div.EasyClickPage2_pastille {
 
 .EasyClickPage2_main_second_gauche img {
   width: 70%;
-  margin-left: 15%;
+  margin-left: 25%;
   position: relative;
-  top:-80px;
+  top:50px;
 }
 
 .EasyClickPage2_main_second_droite {
@@ -550,9 +557,9 @@ div.EasyClickPage2_pastille {
 
 .EasyClickPage2_main_troisieme_gauche img {
   width: 70%;
-  margin-left: 15%;
+  margin-left: 25%;
   position: relative;
-  top:-80px;
+  top:50px;
 }
 .EasyClickPage2_main_troisieme_gauche {
   display: inline-block;
@@ -583,7 +590,8 @@ div.EasyClickPage2_pastille {
   border-width: 50px;
   display: inline-block;
   margin-left: 5%;
-
+  position: absolute;
+  top:100px;
 }
 
 .EasyClickPage2_main_second_gauche_pastille_ext {
@@ -594,7 +602,8 @@ div.EasyClickPage2_pastille {
   border-width: 50px;
   display: inline-block;
   margin-left: 5%;
-
+  position: absolute;
+  top:100px;
 }
 
 .EasyClickPage2_main_troisieme_gauche_pastille_ext {
@@ -605,47 +614,52 @@ div.EasyClickPage2_pastille {
   border-width: 50px;
   display: inline-block;
   margin-left: 5%;
+  position: absolute;
 }
 
 .EasyClickPage2_main_troisieme_gauche_pastille_int {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #C4C4C4;
+  background-color: #C4C4C491;
   border-width: 50px;
   display: inline-block;
-  margin-left: -5%;
-  margin-bottom: 2%;
+  margin-left: 6%;
+  top:15px;
+  position: absolute;
 }
 
 .EasyClickPage2_main_second_gauche_pastille_int {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #C4C4C4;
+  background-color: #C4C4C491;
   border-width: 50px;
   display: inline-block;
-  margin-left: -5%;
-  margin-bottom: 2%;
+  margin-left: 5.5%;
+  top:105px;
+  position: absolute;
 }
 
 .EasyClickPage2_main_premier_gauche_pastille_int {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #C4C4C4;
+  background-color: #C4C4C491;
   border-width: 50px;
   display: inline-block;
-  margin-left: -5%;
-  margin-bottom: 2%;
+  margin-left: 6%;
+  top:105px;
+  position: absolute;
 }
 
 .vertical-line{
   border-left: 5px solid #EF923D;
   display: inline-block;
   height: 350px;
-  margin-left: -3%;
-  margin-bottom: 13%;
+  margin-left: 6%;
+  position: absolute;
+  top:200PX;
 }
 
 .EasyClick_main_explication {
@@ -654,7 +668,6 @@ div.EasyClickPage2_pastille {
 
 .EasyClickPage2_footer_images {
   display: inline-block;
-  word-spacing: 50px;
 }
 
 .EasyClickPage2_main_premier {
@@ -670,4 +683,185 @@ div.EasyClickPage2_pastille {
 .EasyClickPage2_main_troisieme {
   position: relative;
   top:100px;
+}
+
+@media screen and (max-width: 768px){
+  div.EasyClick_header_menu img{
+    width: 50%;
+  }
+  div.EasyClick_header_menu ul{
+    width: 100%;
+    padding: 0;
+  }
+  div.EasyClick_header_main{
+    text-align: center;
+    ul{
+      padding: 0;
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+  div.EasyClick_header_main button{
+    width: 60%;
+    margin: 10% auto;
+    height: 10vw;
+  }
+  div.EasyClick_main_pourcentage60{
+    width: 80%;
+    display: block;
+  }
+  div.EasyClick_main_pourcentage90{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  div.EasyClick_main_pourcentage20{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  div.EasyClick_main_explication_droite h3{
+    width: 46%;
+    margin-left: 50%;
+    margin-top: 10%;
+    text-align: left;
+  }
+  div.EasyClick_main_explication_droite{
+    text-align: center;
+  }
+  div.EasyClick_main_explication_droite_carre_haut{
+    width: 80%;
+    margin: 20% auto 0;
+  }
+  div.EasyClick_main_explication_droite_carre_haut_droite{
+    width: 80%;
+    margin: 10% auto 0;
+    top: 0;
+  }
+  div.EasyClick_main_explication_droite_carre_bas{
+    width: 80%;
+    margin: 10% auto 0;
+    top: 0;
+  }
+  div.EasyClick_main_explication_droite_carre_bas_droite{
+    width: 80%;
+    margin: 10% auto 0;
+    top: 0;
+  }
+  div.EasyClick_main_button button{
+    margin-left: 20%;
+  }
+  div.EasyClick_footer_images{
+    img{
+      width: auto !important;
+    }
+  }
+  .EasyClickPage2_header_menu img{
+    width: 50%;
+  }
+  .EasyClickPage2_header_menu ul{
+    width: 100%;
+    padding: 0;
+    li#secondo{
+      width: 50%;
+    }
+  }
+  #ordi{
+    width: 50%;
+    display: inline-block;
+    margin-left: 24%;
+    margin-top: 8%;
+    z-index: -1;
+  }
+  #appareil{
+    width: 25%;
+    display: inline-block;
+    margin-left: 10%;
+    position: absolute;
+    margin-top: 29%;
+  }
+  div.EasyClickPage2_pastille{
+    left: 17%;
+    top: 49%;
+    width: 31%;
+  }
+  div.EasyClickPage2_pastilleorange{
+    width: 31%;
+    top: 63%;
+  }
+  div.EasyClickPage2_main p{
+    top: 0;
+  }
+  div.EasyClickPage2_main{
+    top: 0;
+  }
+  div.EasyClickPage2_main_premier{
+    top: 0;
+    margin-bottom: 50%;
+    div.EasyClickPage2_main_premier_gauche{
+      div.EasyClickPage2_main_premier_gauche_pastille_ext{
+        top: 0;
+      }
+      div.EasyClickPage2_main_premier_gauche_pastille_int{
+        top: 0;
+      }
+      span.vertical-line{
+        top: 0;
+      }
+      img{
+        top: 0;
+      }
+    }
+    div.EasyClickPage2_main_premier_droite{
+      top: 290px;
+      width: 100%;
+      margin-left: 5%;
+      left: 0;
+    }
+  }
+  div.EasyClickPage2_main_second{
+    top: 0;
+    div.EasyClickPage2_main_second_gauche{
+      width: 100%;
+      margin-top: 20%;
+      span.vertical-line{
+        top: 130px;
+      }
+      div.EasyClickPage2_main_second_gauche img{
+        margin-left: 20%;
+      }
+    }
+    div.EasyClickPage2_main_second_droite{
+      width: 100%;
+      top: 0;
+      left: 0;
+      margin-left: 5%;
+      margin-top: 27%;
+    }
+  }
+  div.EasyClickPage2_main_troisieme{
+    top: 0;
+    div.EasyClickPage2_main_troisieme_gauche{
+      width: 100%;
+      .vertical-line{
+        top: 0;
+      }
+    }
+    div.EasyClickPage2_main_troisieme_droite{
+      width: 100%;
+      top: 0;
+      left: 0;
+      margin-top: 27%;
+      margin-left: 5%;
+    }
+  }
+  div.EasyClickPage2_main_button{
+    top: 0;
+  }
+  div.EasyClickPage2_footer_images{
+    img{
+      width: auto !important;
+    }
+  }
 }

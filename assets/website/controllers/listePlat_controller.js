@@ -13,7 +13,7 @@ export default class extends Controller {
     connect() {
         var listMenu = document.querySelectorAll(".liste-menu-indiv");
         var platIndiv = document.querySelectorAll(".liste-plat-indiv");
-        console.log(platIndiv);
+        var tabMenuMobile = document.querySelectorAll("option");
         listMenu[0].classList.add("active");
         platIndiv[0].classList.add("active");
         listMenu.forEach(function (items,i){
@@ -24,10 +24,10 @@ export default class extends Controller {
                         item.classList.add("active");
                     }
                 });
-                listMenu[i].classList.add("active");
                 platIndiv.forEach(function (itemAcc,x){
+                    var text = listMenu[i].textContent;
                     itemAcc.classList.remove("active");
-                    if(i===x){
+                    if(itemAcc.classList.contains(text)){
                         itemAcc.classList.add("active");
                     }
                 });

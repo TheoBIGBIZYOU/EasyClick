@@ -9,25 +9,22 @@
             <hr>
         </div>
         <div class="liste-plat-main">
-            {% for itemsMenu in content.listMenu %}
-                {% for item in content.pages %}
-                    {% if item.category.name == itemsMenu.title %}
-                        {{ dump(item.category.name) }}
-                        {{ dump(itemsMenu.title) }}
-                        {{ dump(item) }}
-                        <a href="{{ item.url }}">
-                            <div class="liste-plat-indiv">
-                                {% for image in item.imagePlat %}
-                                    <img src="{{ image.url }}" alt="">
-                                {% endfor %}
-                                <div class="description">
-                                    <h2>{{ item.title }}</h2>
-                                    <p>{{ item.prix }} €</p>
-                                </div>
-                            </div>
-                        </a>
-                    {% endif %}
-                {% endfor %}
+            {% for item in content.pages %}
+                <a href="{{ item.url }}">
+                    <div class="liste-plat-indiv {{ item.category.name }}">
+                        {% for image in item.imagePlat %}
+                            <img src="{{ image.url }}" alt="">
+                        {% endfor %}
+                        <div class="description">
+                            <h2>{{ item.title }}</h2>
+                            {% if item.category.name == "PASTA-FRESCA" or item.category.name == "PIZZERIA" or item.category.name == "ANTIPASTA" %}
+                                <p>{{ item.number2 }} €</p>
+                            {% else %}
+                                <p>{{ item.prix }} €</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </a>
             {% endfor %}
         </div>
     </div>

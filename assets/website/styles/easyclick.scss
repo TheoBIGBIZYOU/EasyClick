@@ -125,6 +125,10 @@ div.IT-container-main-ClickandCollect-texte2 p {
 div.IT-container-main-ClickandCollect-button{
   text-align: center;
   margin: 4.5% auto ;
+  a{
+    text-decoration: none;
+    color: black;
+  }
 }
 div.IT-container-main-ClickandCollect-button button{
   border-radius: 15%;
@@ -245,5 +249,11 @@ div.IT-container-main-block-images-haut-right-commentaire{
   div.IT-Footer-logo-RS img{
     width: 50%;
   }
-
+  div.IT-container-main-block-images-haut-right-commentaire{
+    width: 100%;
+    padding: 3% 0;
+    p{
+      margin: 5%;
+    }
+  }
 }

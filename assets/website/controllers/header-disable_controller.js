@@ -15,6 +15,5 @@ export default class extends Controller {
         var containerFooter=document.getElementsByClassName("footer_container");
         containerHeader[0].classList.add("disable");
         containerFooter[0].classList.add("disable");
-
     }
 }

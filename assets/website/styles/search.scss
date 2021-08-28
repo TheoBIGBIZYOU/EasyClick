@@ -1,0 +1,24 @@
+div.search{
+  text-align: center;
+  h2{
+    margin-top: 0;
+    font-size: 30px;
+    font-family: "Raleway";
+    text-transform: uppercase;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+    li{
+      a{
+        text-decoration: none;
+        color: black;
+        font-family: "Raleway";
+        font-size: 17px;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

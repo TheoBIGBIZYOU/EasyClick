@@ -99,6 +99,11 @@
                 <title lang="fr">Prix</title>
             </meta>
         </property>
+        <property name="number2" type="number">
+            <meta>
+                <title lang="fr">Prix static</title>
+            </meta>
+        </property>
         <block name="listIngredients" default-type="listIngredients" minOccurs="0">
             <meta>
                 <title>Ingrédients</title>
