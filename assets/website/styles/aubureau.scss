@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+}
+.Main_Au_Bureau{
+
+  background-color: black;
+  color:white;
+  width: 1440px;
+}
+.Au_Bureau_Menu {
+  display: inline-block;
+
+}
+.Au_Bureau_Menu hr {
+  width: 1440px;
+  top: 163px;
+  border: 1px solid #F6D88A;
+}
+
+.Au_Bureau_Menu #logo{
+  display: inline-block;
+  width: 3%;
+  padding: 1%;
+}
+
+.Au_Bureau_Menu  p {
+  display: inline-block;
+  width: 75%;
+  color:#FEE4A2;
+  word-spacing: 10px;
+  margin-left: 259px;
+  top: -66px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+
+
+}
+
+.Au_Bureau_Menu  img{
+  display: inline-block;
+  width: 15%;
+  padding: 1%;
+
+}
+
+.Au_Bureau_Tete{
+  display: inline-block;
+  text-align: center;
+}
+
+.Au_Bureau_Tete img{
+  width:1298px;
+  margin-left: 80px;
+
+}
+
+.Au_Bureau_Deuxieme {
+  margin-top: 5%;
+}
+
+.Au_Bureau_Deuxieme_Actualite {
+  width: 45%;
+  display: inline-block;
+  position: relative;
+  left:110px;
+}
+.Au_Bureau_Deuxieme_Actualite img{
+  width: 100%;
+  height: 580px;
+  display: inline-block;
+
+
+}
+.Au_Bureau_Deuxieme_Actualite p {
+  font-weight: bolder;
+  margin-top: -10%;
+  text-align: center;
+  width: 100%;
+  padding: 3%;
+  background-color: black ;
+  opacity: 70%;
+  font-size: 34px;
+  position: absolute;
+}
+
+
+.Au_Bureau_Deuxieme_Plat_Jour {
+  width: 45%;
+  display: inline-block;
+  position: relative;
+  left:60px;
+}
+.Au_Bureau_Deuxieme_Plat_Jour img{
+  width: 100%;
+  height: 593px;
+  display: inline-block;
+}
+.Au_Bureau_Deuxieme_Plat_Jour p {
+  font-weight: bolder;
+  margin-top: -10%;
+  text-align: center;
+  width: 100%;
+  padding: 3%;
+  background-color: black;
+  opacity: 70%;
+  font-size: 34px;
+  position: absolute;
+}
+
+.Au_Bureau_Tete h3 {
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.Au_Bureau_Tete button {
+  text-align: center;
+  background-color: #F6D88A;
+  bordr-color:#F6D88A;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 1%;
+
+  width: 190px;
+  height: 55px;
+  left: 625px;
+  top: 1013px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+
+}
+
+.Au_Bureau_Troisieme {
+  position: relative;
+}
+.Au_Bureau_Troisieme img{
+  display: inline-block;
+  width: 25%;
+  margin-left: 5%;
+
+}
+
+
+
+.Au_Bureau_Troisieme_Text {
+  display: inline-block;
+  width: 55%;
+  text-align: center;
+  margin-left: 8%;
+  margin-bottom: -5%;
+  position: absolute;
+}
+
+.Au_Bureau_Troisieme_Text h3{
+  color:#F6D88A;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.Au_Bureau_Troisieme_Text p{
+
+  left: 690px;
+  top: 2087px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.Au_Bureau_Troisieme_Text button{
+  text-align: center;
+  background-color: #F6D88A;
+  border-color:#F6D88A;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 1%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+
+  left: 608px;
+  top: 3025px;
+}
+
+
+
+.Au_Bureau_Click_Collect_Text h2 {
+  font-size: 56px;
+  color:#F6D88A;
+  text-align: center;
+  position: absolute;
+  top:155px;
+  left:450px;
+}
+
+.Au_Bureau_Click_Collect_Text #text1 {
+  top:345px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  position: absolute;
+  left: 500px;
+}
+
+.Au_Bureau_Click_Collect_Text button{
+  background-color: #F6D88A;
+  border-color: #F6D88A;
+  text-decoration: none;
+  border-radius: 23px;
+  padding: 2%;
+  margin-top: 10%;
+  font-weight: bolder;
+  font-size: 30px;
+  position: absolute;
+  bottom: 140px;
+  left:600px;
+}
+
+.Au_Bureau_Click_Collect_Text #text2 {
+  font-family: Futura;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  bottom: 35px;
+  left:550px;
+}
+
+.Au_Bureau_Franchise_Text {
+  display: inline-block;
+  width: 35%;
+}
+
+.Au_Bureau_Franchise_Text h3{
+  color: #F6D88A;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.Au_Bureau_Franchise_Text p{
+
+  text-align: center;
+  margin-bottom: 220px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.Au_Bureau_Franchise_Text button{
+  background-color: #F6D88A;
+  border-color: #F6D88A;
+  text-decoration: none;
+  padding: 2%;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  position: relative;
+  top:-100px;
+}
+.Au_Bureau_Franchise img{
+  display: inline-block;
+  width: 55%;
+
+}
+.Au_Bureau_Franchise {
+  text-align: center;
+}
+
+.Au_Bureau_Footer_D {
+  display: inline-block;
+  width: 40%;
+  position: relative;
+  top:-130px;
+  left: 180px;
+}
+
+.Au_Bureau_Footer_D img{
+  width: 10%;
+}
+
+.Au_Bureau_Footer_G {
+  display: inline-block;
+  width: 50%;
+}
+
+.Au_Bureau_Click_Collect img{
+  width:100%;
+  margin-top: 2%;
+}
+.Au_Bureau_Click_Collect {
+  position: relative;
+}
+
+#colonne1 {
+  width: 40%;
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin-left: 100px;
+}
+
+#colonne2 {
+  width: 40%;
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  position: relative;
+  top:-130px;
+}
+
+.Au_Bureau_Footer hr{
+  border: 1px solid #F6D88A;
+}

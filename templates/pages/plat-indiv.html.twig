@@ -2,9 +2,6 @@
 
 {% block content %}
     <div class="plat-indiv-container">
-        <div class="plat-indiv-menu">
-
-        </div>
         <div class="plat-indiv-plat">
             <div class="plat-indiv-plat-container">
                 <div class="plat-indiv-left">
@@ -38,7 +35,7 @@
                         <p class="prixAvecQuantite">{{ content.number }}</p>
                     </div>
                     <div class="ajouter">
-                        <a href="">AJOUTER AU PANIER</a>
+                        <a href="/it-food/panier">AJOUTER AU PANIER</a>
                     </div>
                     <div class="plat-indiv-right-ingredients">
                         {% for ing in content.listIngredients %}

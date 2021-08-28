@@ -1,0 +1,73 @@
+div.adresse-container{
+  width: 30%;
+  margin: 0 auto;
+  div.formulaire{
+    width: 100%;
+    display: inline-block;
+    div.formulaire-indiv{
+      margin-bottom: 4%;
+      label{
+        display: block;
+        margin: 0 0 .28571429rem 0;
+        color: rgba(0,0,0,.87);
+        font-size: .92857143em;
+        font-weight: 700;
+        text-transform: none;
+        font-family: 'Poppins', sans-serif;
+        span{
+          color: red;
+        }
+      }
+      input{
+        width: 100%;
+        border: solid 1px #5a5851;
+        background-color: #fff;
+        border-radius: 0;
+        height: 35px;
+      }
+    }
+  }
+  div.next{
+    display: flex;
+    margin: 5% 0;
+    svg{
+      width: 70px;
+      height: 25px;
+    }
+    p{
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      font-size: 10px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #5a5851;
+    }
+  }
+
+  div.button{
+    margin: 15% 0;
+    a{
+      text-decoration: none;
+      margin-top: 5%;
+      padding: 8% 44% !important;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff;
+      background-color: #5a5851;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  div.adresse-container{
+    width: 80%;
+  }
+}

@@ -1,15 +1,17 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
-    <h2>Showing {{ hits|length }} results for "{{ query }}"</h2>
+    <div class="search">
+        <h2>Nous avons {{ hits|length }} résultats pour "{{ query }}"</h2>
 
-    <ul>
-        {% for i, hit in hits %}
-            <li>
-                <a href="{{ hit.document.url }}">
-                    {{- hit.document.title -}}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+        <ul>
+            {% for i, hit in hits %}
+                <li>
+                    <a href="{{ hit.document.url }}">
+                        - {{- hit.document.title -}}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}

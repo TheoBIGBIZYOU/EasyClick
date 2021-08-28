@@ -34,7 +34,7 @@
         </property>
         <property name="NomPlat" type="text_line">
             <meta>
-                <title lang="fr">Nom du plat</title>
+                <title lang="fr">Nom du dedeplat</title>
             </meta>
         </property>
 
@@ -97,6 +97,11 @@
         <property name="number" type="number">
             <meta>
                 <title lang="fr">Prix</title>
+            </meta>
+        </property>
+        <property name="number2" type="number">
+            <meta>
+                <title lang="fr">Prix static</title>
             </meta>
         </property>
         <block name="listIngredients" default-type="listIngredients" minOccurs="0">

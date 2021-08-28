@@ -1,0 +1,57 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <div class="panier">
+        <div class="panier-title">
+            <h1>MON PANIER</h1>
+        </div>
+        <div class="panier-main">
+            <div class="panier-left">
+                <div class="left">
+                    <img src="https://fakeimg.pl/250x250/">
+                    <p>Nom article</p>
+                </div>
+                <div class="right">
+                    <p>10.00 €</p>
+                    <div class="bin">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>icons/bin/black</title>
+                            <g id="icons/bin/black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                                <line x1="19" y1="6" x2="5" y2="6" id="Path-2" stroke="#5A5851" stroke-width="2"></line>
+                                <line x1="14" y1="5" x2="10" y2="5" id="Path-2" stroke="#5A5851" stroke-width="2"></line>
+                                <path d="M6,10 L6,20 C6,20.6666667 6.33333333,21 7,21 C7.66666667,21 11,21 17,21 C17.6666667,21 18,20.6666667 18,20 C18,19.3333333 18,16 18,10" id="Path-8" stroke="#5A5851" stroke-width="2"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="panier-right">
+                <p class="montant">MONTANT DE MON PANIER</p>
+                <div class="panier-right-bottom">
+                    <div class="panier-right-bottom-left">
+                        <p>Total panier</p>
+                    </div>
+                    <div class="panier-right-bottom-right">
+                        <p>10.00 €</p>
+                        <p>OFFERTE <span>20 €</span></p>
+                        <p>10.00 €</p>
+                    </div>
+                    <div class="button">
+                        <input type="text" id="" name="" form="" placeholder="Entrez votre code...">
+                        <button type="submit" id="sylius-save" class="ui teal icon labeled button" form="sylius_cart">Vérifier</button>
+                    </div>
+                    <div class="total">
+                        <p class="total">TOTAL</p>
+                        <p>10.00 €</p>
+                        <div class="button">
+                            <a href="/it-food/panier/adresse">COMMANDER</a>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <a href="/it-food/liste-des-plats">< Continuer mon shopping </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

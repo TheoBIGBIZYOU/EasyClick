@@ -61,13 +61,13 @@
 
             <params>
                 <param name="provider" value="pages"/>
-                <param name="max_per_page" value="4"/>
                 <param name="page_parameter" value="p"/>
 
                 <param name="properties" type="collection">
                     <param name="NomPlat" value="NomPlat"/>
                     <param name="imagePlat" value="imagePlat"/>
                     <param name="prix" value="prix"/>
+                    <param name="number2" value="number"/>
                     <param name="category" value="category">
                     </param>
                 </param>

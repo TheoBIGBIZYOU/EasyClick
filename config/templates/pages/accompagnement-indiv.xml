@@ -51,9 +51,20 @@
                 <title lang="fr">Prix</title>
             </meta>
         </property>
+        <property name="number2" type="number">
+            <meta>
+                <title lang="fr">Prix static</title>
+            </meta>
+        </property>
         <property name="category" type="single_category_selection">
             <meta>
                 <title lang="fr">Catégorie du plat</title>
+            </meta>
+        </property>
+
+        <property name="description" type="text_area">
+            <meta>
+                <title lang="fr">Description</title>
             </meta>
         </property>
     </properties>

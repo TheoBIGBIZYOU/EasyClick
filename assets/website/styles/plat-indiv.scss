@@ -207,3 +207,42 @@ div.plat-indiv-container{
     }
   }
 }
+@media screen and (max-width: 768px){
+  div.plat-indiv-container{
+    div.plat-indiv-plat{
+      div.plat-indiv-plat-container{
+        padding: 5% 0 10%;
+        div.plat-indiv-left{
+          display: block;
+          width: 100%;
+        }
+        div.plat-indiv-right{
+          width: 100%;
+          display: block;
+          margin-left: 0;
+        }
+      }
+    }
+    div.accompagnement{
+      div.menu{
+        p{
+          width: 100% !important;
+          text-align: center !important;
+        }
+      }
+      div.accompagnement_main{
+        div.accompagnement_indiv{
+          div.boisson_indiv{
+            width: 100% !important;
+            margin: 0 0 35% 0 !important;
+            div.description{
+              p{
+                text-align: center !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
