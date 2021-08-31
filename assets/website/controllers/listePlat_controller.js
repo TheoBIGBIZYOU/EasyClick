@@ -16,6 +16,7 @@ export default class extends Controller {
         var tabMenuMobile = document.querySelectorAll("option");
         listMenu[0].classList.add("active");
         platIndiv[0].classList.add("active");
+        platIndiv[1].classList.add("active");
         listMenu.forEach(function (items,i){
             items.addEventListener('click',function (){
                 listMenu.forEach(function (item,y){
