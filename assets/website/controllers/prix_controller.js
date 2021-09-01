@@ -17,11 +17,14 @@ export default class extends Controller {
         var prix=document.querySelector(".prixAvecQuantite");
         var prixUnite = prix.innerText;
         var x = 1;
+        var res=0
         prix.innerHTML=prixUnite + " €"
         plus.addEventListener("click",function (){
             x ++;
             quantitePlat.innerHTML=x;
-            prix.innerHTML=prixUnite * x + " €";
+            res = prixUnite*x;
+            var resultat = res.toFixed(2);
+            prix.innerHTML=resultat + " €";
         });
         moins.addEventListener("click",function (){
             x --;
@@ -29,7 +32,9 @@ export default class extends Controller {
                 x = 1;
             }
             quantitePlat.innerHTML=x;
-            prix.innerHTML=prixUnite * x + " €";
+            res = prixUnite*x;
+            var resultat = res.toFixed(2);
+            prix.innerHTML=resultat + " €";
         });
 
         var accompagnement = document.querySelectorAll(".menu p");
