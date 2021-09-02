@@ -368,6 +368,7 @@ div.EasyClickPage2_main_button {
   text-align: center;
   position: relative;
   top:50px;
+  margin-bottom: 7%;
 
 }
 
@@ -537,7 +538,7 @@ div.EasyClickPage2_pastille {
   width:40%;
   position: relative;
   left: 100px;
-  top:-20px;
+  top:30px;
 
 }
 .EasyClickPage2_main_second_droite p {
@@ -559,11 +560,14 @@ div.EasyClickPage2_pastille {
   width: 70%;
   margin-left: 25%;
   position: relative;
-  top:50px;
+  top:100px;
 }
 .EasyClickPage2_main_troisieme_gauche {
   display: inline-block;
   width: 40%;
+  span.vertical-line{
+    top: 130px;
+  }
 }
 
 .EasyClickPage2_main_troisieme_droite {
@@ -571,7 +575,7 @@ div.EasyClickPage2_pastille {
   width:40%;
   position: relative;
   left: 100px;
-  top:-70px;
+  top:50px;
 }
 .EasyClickPage2_main_troisieme_droite h1 {
   color: grey;
@@ -591,7 +595,7 @@ div.EasyClickPage2_pastille {
   display: inline-block;
   margin-left: 5%;
   position: absolute;
-  top:100px;
+  top:160px;
 }
 
 .EasyClickPage2_main_second_gauche_pastille_ext {
@@ -603,7 +607,7 @@ div.EasyClickPage2_pastille {
   display: inline-block;
   margin-left: 5%;
   position: absolute;
-  top:100px;
+  top:153px;
 }
 
 .EasyClickPage2_main_troisieme_gauche_pastille_ext {
@@ -615,6 +619,7 @@ div.EasyClickPage2_pastille {
   display: inline-block;
   margin-left: 5%;
   position: absolute;
+  top: 104px;
 }
 
 .EasyClickPage2_main_troisieme_gauche_pastille_int {
@@ -625,8 +630,8 @@ div.EasyClickPage2_pastille {
   border-width: 50px;
   display: inline-block;
   margin-left: 6%;
-  top:15px;
   position: absolute;
+  top: 120px;
 }
 
 .EasyClickPage2_main_second_gauche_pastille_int {
@@ -637,7 +642,7 @@ div.EasyClickPage2_pastille {
   border-width: 50px;
   display: inline-block;
   margin-left: 5.5%;
-  top:105px;
+  top:167px;
   position: absolute;
 }
 
@@ -649,7 +654,7 @@ div.EasyClickPage2_pastille {
   border-width: 50px;
   display: inline-block;
   margin-left: 6%;
-  top:105px;
+  top:173px;
   position: absolute;
 }
 
@@ -683,6 +688,7 @@ div.EasyClickPage2_pastille {
 .EasyClickPage2_main_troisieme {
   position: relative;
   top:100px;
+  margin-bottom: 13%;
 }
 
 @media screen and (max-width: 768px){
@@ -801,7 +807,7 @@ div.EasyClickPage2_pastille {
     margin-bottom: 50%;
     div.EasyClickPage2_main_premier_gauche{
       div.EasyClickPage2_main_premier_gauche_pastille_ext{
-        top: 0;
+        top: -18px;
       }
       div.EasyClickPage2_main_premier_gauche_pastille_int{
         top: 0;
@@ -827,9 +833,16 @@ div.EasyClickPage2_pastille {
       margin-top: 20%;
       span.vertical-line{
         top: 130px;
+        z-index: -1;
       }
       div.EasyClickPage2_main_second_gauche img{
         margin-left: 20%;
+      }
+      div.EasyClickPage2_main_second_gauche_pastille_ext{
+        top: 114px;
+      }
+      div.EasyClickPage2_main_second_gauche_pastille_int{
+        top: 130px;
       }
     }
     div.EasyClickPage2_main_second_droite{
@@ -846,6 +859,12 @@ div.EasyClickPage2_pastille {
       width: 100%;
       .vertical-line{
         top: 0;
+      }
+      div.EasyClickPage2_main_troisieme_gauche_pastille_ext{
+        top: -12px;
+      }
+      div.EasyClickPage2_main_troisieme_gauche_pastille_int{
+        top: 3px;
       }
     }
     div.EasyClickPage2_main_troisieme_droite{
